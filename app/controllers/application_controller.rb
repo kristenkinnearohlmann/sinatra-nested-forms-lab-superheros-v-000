@@ -10,6 +10,8 @@ class App < Sinatra::Base
 
     post '/teams' do
       @team = params
+
+      erb :'../views/team'
     end
 
 end
